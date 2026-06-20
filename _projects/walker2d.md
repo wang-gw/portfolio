@@ -20,7 +20,6 @@ summary_en: "Two rounds — training a Walker2d walking policy with PPO, then me
 | 환경 | MuJoCo Walker2d-v5 (Gymnasium) |
 | 알고리즘 | Stable-Baselines3 PPO |
 | 총 학습 스텝 | 500,000 |
-| 학습 시간 | 9.9분 (단일 CPU) |
 | 최고 평가 보상 | **2,509.9** |
 | 최종 평가 (5 에피소드 평균) | **2,205.6 ± 394.6** |
 | 만점 길이(1000) 달성 | 5번 중 3번 |
@@ -57,7 +56,7 @@ summary_en: "Two rounds — training a Walker2d walking policy with PPO, then me
 | **Worst-case** | 315 | **399** | **DR +27%** |
 | 조건간 표준편차 | 864.8 | **97.5** | **DR 9배 일관** |
 
-> **핵심 발견**: DR 정책은 default에서는 약하지만 어떤 변형에도 무너지지 않습니다. 실로봇 배포에서는 후자의 특성이 본질적으로 더 중요합니다.
+ **핵심 발견**: DR 정책은 default에서는 약하지만 어떤 변형에도 무너지지 않았습니다.
 
 <figure class="figure" markdown="0">
   <img class="figure__img" src="{{ '/assets/files/walker2d-r2-robustness.png' | relative_url }}" alt="7개 환경 강건성 비교">
