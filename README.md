@@ -17,10 +17,8 @@ portfolio/
 │   └── footer.html
 ├── _projects/               # ← 프로젝트 페이지는 여기에 추가
 │   ├── sobi.md
-│   ├── my-role.md
 │   ├── walker2d.md
 │   ├── isaacsim-lambda.md
-│   ├── llm-webbook.md
 │   ├── saas.md
 │   └── system-prompt.md
 ├── assets/
@@ -136,7 +134,6 @@ bundle exec jekyll serve
 
 - [ ] `_projects/walker2d.md` — 작업 폴더 / 학습 결과 영상 (사용자 전달 예정)
 - [ ] `_projects/isaacsim-lambda.md` — 아키텍처 다이어그램 (사용자 전달 예정)
-- [ ] `_projects/llm-webbook.md` — AI.SW 웹북 링크
 - [ ] `_projects/saas.md` — 회사명, 역할, 대회 / 아이템 상세
 - [ ] `_projects/sobi.md` — 영문 번역 (현재 KR만 채워짐)
 - [ ] 사이트 author 이름 (`_config.yml`의 `author` 필드)
