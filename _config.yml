@@ -1,0 +1,44 @@
+# Site
+title: Portfolio
+description: Humanoid RL · Full-stack
+author: Your Name
+
+# GitHub Pages — set to "/portfolio" if deployed at username.github.io/portfolio
+# Leave as "" if using a user/org site or a custom domain
+baseurl: "/portfolio"
+url: ""
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  parse_block_html: true
+
+permalink: /:path/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - .gitignore
+  - LICENSE

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="project">
+  <header class="project__header">
+    <p class="project__kicker">
+      <span data-lang="ko">{{ page.tag | default: '프로젝트' }}</span>
+      <span data-lang="en">{{ page.tag_en | default: page.tag | default: 'Project' }}</span>
+    </p>
+    <h1 class="project__title">
+      <span data-lang="ko">{{ page.title }}</span>
+      <span data-lang="en">{{ page.title_en | default: page.title }}</span>
+    </h1>
+    {% if page.summary %}
+    <p class="project__summary">
+      <span data-lang="ko">{{ page.summary }}</span>
+      <span data-lang="en">{{ page.summary_en | default: page.summary }}</span>
+    </p>
+    {% endif %}
+  </header>
+  <div class="project__body">
+    {{ content }}
+  </div>
+  <p class="project__back">
+    <a href="{{ '/projects/' | relative_url }}">
+      <span data-lang="ko">← 프로젝트 목록</span>
+      <span data-lang="en">← All projects</span>
+    </a>
+  </p>
+</article>

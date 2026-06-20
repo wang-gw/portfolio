@@ -1,0 +1,41 @@
+---
+title: Projects
+permalink: /projects/
+---
+<section class="hero">
+  <p class="hero__kicker">
+    <span data-lang="ko">프로젝트</span>
+    <span data-lang="en">Projects</span>
+  </p>
+  <h1 class="hero__title">
+    <span data-lang="ko">프로젝트 목록</span>
+    <span data-lang="en">All projects</span>
+  </h1>
+  <p class="hero__tagline">
+    <span data-lang="ko">팀 프로젝트와 개인 작업물 모음입니다. 휴머노이드 RL 인턴십 맥락에 맞게 정리했습니다.</span>
+    <span data-lang="en">Team and solo work, organized for a humanoid RL internship context.</span>
+  </p>
+</section>
+
+<section>
+  <ul class="projects-list">
+    {% assign sorted = site.projects | sort: 'order' %}
+    {% for p in sorted %}
+    <li>
+      <a href="{{ p.url | relative_url }}">
+        <div class="projects-list__row">
+          <span class="projects-list__title-text">
+            <span data-lang="ko">{{ p.title }}</span>
+            <span data-lang="en">{{ p.title_en | default: p.title }}</span>
+          </span>
+          <span class="projects-list__meta">{{ p.tag }}</span>
+        </div>
+        <p class="projects-list__summary">
+          <span data-lang="ko">{{ p.summary }}</span>
+          <span data-lang="en">{{ p.summary_en | default: p.summary }}</span>
+        </p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

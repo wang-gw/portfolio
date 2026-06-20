@@ -1,0 +1,71 @@
+---
+title: Home
+---
+<section class="hero">
+  <p class="hero__kicker">
+    <span data-lang="ko">로봇 지능 · 풀스택 · 강화학습</span>
+    <span data-lang="en">Robot Intelligence · Full-stack · RL</span>
+  </p>
+  <h1 class="hero__title">
+    <span data-lang="ko">RL을 돌릴 줄 아는 풀스택.<br>학습 파이프라인부터 결과 분석까지<br>끝까지 책임집니다.</span>
+    <span data-lang="en">A full-stack engineer who ships RL.<br>From training pipeline to result<br>analysis &mdash; end-to-end.</span>
+  </h1>
+  <p class="hero__tagline">
+    <span data-lang="ko">SaaS 풀스택 개발자에서 출발해 LLM·Transformer 학습 흐름을 따라가다, 휴머노이드의 brain layer에 끌렸습니다. 현재는 SoBi 팀의 Project Lead 겸 강화학습 담당으로 보행 policy 학습 환경을 만들고 있습니다.</span>
+    <span data-lang="en">Starting as a SaaS full-stack engineer and following the LLM &middot; Transformer learning track, I was drawn to the brain layer of humanoid robots. Currently leading the SoBi project and building reinforcement-learning environments for walking policies.</span>
+  </p>
+</section>
+
+<section>
+  <h2>
+    <span data-lang="ko">간단 소개</span>
+    <span data-lang="en">Short bio</span>
+  </h2>
+  <p>
+    <span data-lang="ko">제품을 직접 만들고 시장에 내놓아본 사람입니다. SaaS 스타트업 인턴(2개월), 창업 경진대회 3위, 동그라미재단 시스템 프롬프트 교육 이수, AI.SW Academy에서 Word Vector부터 Transformer까지 학습하며 한국어 LLM 프로젝트를 준비해 왔습니다.</span>
+    <span data-lang="en">I'm a builder who has shipped real products &mdash; SaaS startup intern (2 months), 3rd place in a startup competition, completed the Donggurami Foundation system-prompt program, and studying from Word Vectors to Transformers at AI.SW Academy while preparing a Korean LLM project.</span>
+  </p>
+  <p>
+    <span data-lang="ko">로봇에 관심이 생긴 뒤로는 MuJoCo Walker2d로 보행 강화학습을 직접 돌려보고, GPU가 없는 환경에서 Lambda Cloud로 Isaac Sim 시각화 파이프라인을 자체 구축해 왔습니다.</span>
+    <span data-lang="en">After turning toward robotics, I trained walking RL on MuJoCo Walker2d and built an Isaac Sim visualization pipeline on Lambda Cloud despite not having a local GPU.</span>
+  </p>
+  <p>
+    <a href="{{ '/about/' | relative_url }}">
+      <span data-lang="ko">더 자세한 소개 →</span>
+      <span data-lang="en">Read full bio →</span>
+    </a>
+  </p>
+</section>
+
+<section>
+  <h2>
+    <span data-lang="ko">주요 프로젝트</span>
+    <span data-lang="en">Featured projects</span>
+  </h2>
+  <ul class="projects-list">
+    {% assign featured = site.projects | sort: 'order' %}
+    {% for p in featured limit: 4 %}
+    <li>
+      <a href="{{ p.url | relative_url }}">
+        <div class="projects-list__row">
+          <span class="projects-list__title-text">
+            <span data-lang="ko">{{ p.title }}</span>
+            <span data-lang="en">{{ p.title_en | default: p.title }}</span>
+          </span>
+          <span class="projects-list__meta">{{ p.tag }}</span>
+        </div>
+        <p class="projects-list__summary">
+          <span data-lang="ko">{{ p.summary }}</span>
+          <span data-lang="en">{{ p.summary_en | default: p.summary }}</span>
+        </p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p style="margin-top: 20px;">
+    <a href="{{ '/projects/' | relative_url }}">
+      <span data-lang="ko">전체 프로젝트 보기 →</span>
+      <span data-lang="en">All projects →</span>
+    </a>
+  </p>
+</section>

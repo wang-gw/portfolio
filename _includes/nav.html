@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="site-logo" href="{{ '/' | relative_url }}">
+      <span data-lang="ko">포트폴리오</span>
+      <span data-lang="en">Portfolio</span>
+    </a>
+    <nav class="site-nav" aria-label="primary">
+      <a href="{{ '/about/' | relative_url }}"><span data-lang="ko">소개</span><span data-lang="en">About</span></a>
+      <a href="{{ '/projects/' | relative_url }}"><span data-lang="ko">프로젝트</span><span data-lang="en">Projects</span></a>
+      <a href="{{ '/skills/' | relative_url }}"><span data-lang="ko">스킬</span><span data-lang="en">Skills</span></a>
+      <a href="{{ '/now/' | relative_url }}"><span data-lang="ko">현재</span><span data-lang="en">Now</span></a>
+    </nav>
+    <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Toggle language">
+      <span class="lang-toggle__ko">KO</span><span class="lang-toggle__sep">/</span><span class="lang-toggle__en">EN</span>
+    </button>
+  </div>
+</header>
