@@ -8,3 +8,7 @@ Gemfile.lock
 *.log
 .DS_Store
 Thumbs.db
+
+# Walker2d work folders — code lives in separate repos
+/walker2d00/
+/walker2d01/
