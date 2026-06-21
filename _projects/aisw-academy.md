@@ -1,5 +1,5 @@
 ---
-title: "AI.SW Academy · 딥러닝 기초 공동 웹북"
+title: "AI.SW Academy 학술회 활동
 title_en: "AI.SW Academy · Deep Learning Fundamentals Web Book"
 order: 5
 tag: "TEAM · ONGOING"
@@ -21,7 +21,7 @@ AI.SW Academy 학술회에서 Word Vector, Language Model, CNN, RNN, Attention, 
 
 <p class="note">웹북은 현재 비공개 / 작업 중. 공개되면 링크를 추가할 예정입니다.</p>
 
-## OH! GYM과의 연결
+## OH! GYM과 연결되는 
 
 휴머노이드 RL의 다음 단계는 **language-conditioned 정책 / VLA 모델**입니다. Transformer · Attention을 처음부터 따라가며 이해해두면, 이 흐름이 본격적으로 들어왔을 때 빠르게 따라갈 수 있다고 생각합니다.
 
