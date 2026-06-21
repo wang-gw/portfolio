@@ -94,7 +94,6 @@ In round 1 I trained a Walker2d walking policy end-to-end with PPO; in round 2 I
 | Environment | MuJoCo Walker2d-v5 (Gymnasium) |
 | Algorithm | Stable-Baselines3 PPO |
 | Total steps | 500,000 |
-| Wall-clock | 9.9 min (single CPU) |
 | Best eval reward | **2,509.9** |
 | Final eval (5-ep mean) | **2,205.6 ± 394.6** |
 | Episodes reaching max length (1000) | 3 of 5 |
@@ -131,7 +130,7 @@ Both policies were cross-evaluated on **7 test variants**: default · heavy · l
 | **Worst-case** | 315 | **399** | **DR +27%** |
 | Std across conditions | 864.8 | **97.5** | **DR 9× more consistent** |
 
-> **Key finding**: the DR policy is weaker on the default env but never collapses under any variation. For real-robot deployment, that consistency matters more than the average.
+**Key finding**: the DR policy is weaker on the default env but never collapses under any variation.
 
 <figure class="figure" markdown="0">
   <img class="figure__img" src="{{ '/assets/files/walker2d-r2-robustness.png' | relative_url }}" alt="Robustness across 7 environments">

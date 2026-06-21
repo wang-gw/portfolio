@@ -39,10 +39,10 @@ Completed the **prompt engineering program** run by the Donggurami Foundation â€
 - Prompt structures that reliably elicit the intended behavior
 - The iterative process of tuning prompts against real scenarios
 
-## Why it matters for RL
+## Connection to OH! GYM
 
-Prompt engineering is **specifying how you want an agent to behave**. That's the same problem reward shaping in RL is solving â€” *"how do I express the behavior I want as a signal?"*
+Prompt engineering is **"specifying how you want an agent to behave."** To find a prompt structure that makes an agent do what I want, I iterate through hundreds or thousands of inputs and verify the LLM's outputs. I think this is essentially the same problem as designing a reward function in reinforcement learning.
 
-This experience means I enter humanoid RL with the right instinct: **defining behavior is hard and iterative**, and you have to come back to the spec again and again.
+This experience gives me the instinct, going into reward shaping for humanoid RL, that **defining behavior is hard and iterative**.
 
 </div>

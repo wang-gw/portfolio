@@ -74,7 +74,7 @@ My local machine has no NVIDIA GPU, so I rented Lambda Cloud GPUs to get Isaac S
 
 ## Why this is actually valuable
 
-I didn't know cloud GPUs or WebRTC well before starting. What I produced isn't a clean architecture — it's **a one-page map that saves the next person on this stack from days of stumbling**.
+I didn't know cloud GPUs or WebRTC well before starting. What I produced isn't a clean architecture — it's **a one-page map that the next person on this stack can use as a reference**.
 
 What I built up here is less "I know how to run Isaac Sim on the cloud" and more **the habit of adding a node every time I hit a wall, so my team can follow the trail**.
 

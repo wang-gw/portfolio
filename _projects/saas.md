@@ -40,25 +40,19 @@ I spent 3 months as a full-stack intern at a SaaS startup and won 3rd place in a
 
 ## SaaS Startup Intern (3 months)
 
-<p class="stub">🛠 Company / role details — to be added</p>
-
 - Full-stack feature development
 - Worked on flows in an actually-running product
 - First time really feeling the **weight of a live product**
 
 ## 3rd Place — Startup Competition
 
-<p class="stub">🏆 Competition / product details — to be added</p>
-
 - Whole arc — team formation, problem framing, MVP, pitch
 - Reached the final with a SaaS service and placed 3rd
 
-## Why this matters for OH! GYM
+## Connection to OH! GYM
 
-Putting SaaS work on a research/engineering portfolio looks odd at first. But one OH! GYM keyword is **"operational technology improvement."**
+Owning end-to-end deployment while building a SaaS platform becomes a real asset for setting up and managing a humanoid simulation environment. It maps onto the sense of **designing training pipelines that run stably on Docker infrastructure and are reproducible by anyone** — rather than one-off experiment code that runs once and stops.
 
-- Someone who has actually shipped a product naturally turns **lab outputs into operational artifacts**.
-- Training code, experiment logs, results — bundled so the team can reuse them.
-- That's the differentiator I can bring from week one.
+Putting a multi-joint physics simulation (Isaac Sim, etc.) on the cloud and securing a stable data path is no different in spirit. With this infrastructure-handling capability and a productization mindset, I believe I can accelerate the team's R&D pace.
 
 </div>

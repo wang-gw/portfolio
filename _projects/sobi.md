@@ -141,6 +141,132 @@ Mechanical 담당 2명은 프로젝트의 하드웨어 설계와 제작을 담�
 
 <div data-lang="en" markdown="1">
 
-<p class="stub">English version coming soon &mdash; the Korean section contains the full SoBi project description (sections 1–9).</p>
+## 1. Project one-liner
+
+**An ongoing team project building a lower-body bipedal walking platform and an upper-body manipulation platform for a humanoid robot, with the eventual goal of expanding into an integrated ROS2-based humanoid platform.**
+
+## 2. Project overview
+
+This is an ongoing team project aimed at a humanoid robot platform that is feasible at the undergraduate level.
+
+The current focus is the **lower-body bipedal platform** &mdash; we're preparing a 12-DOF bipedal robot structure, a SoftFoot-based foot, a ROS2-based control architecture, MuJoCo or Isaac Lab-based simulation, and a reinforcement-learning-based walking-policy training process.
+
+Detailed technical composition, hardware plans, schedule, and evaluation metrics are organized in the separately attached **"2026 Hanieum DreamUp Project Execution Plan."** That plan documents that the SoBi project's core goals include the 12-DOF bipedal robot, SoftFoot, ROS2 Humble, MuJoCo, reinforcement learning, and CoT / GRF comparative analysis.
+
+## 3. Sub-project: SoBi
+
+**SoBi stands for "SoftFoot-equipped Bipedal Robot." It is a project that applies a SoftFoot &mdash; inspired by the Windlass Mechanism of the human foot &mdash; to a bipedal walking robot.**
+
+Existing bipedal robots with flat rigid feet have trouble maintaining walking stability on uneven terrain or under disturbances. SoBi aims to solve this by applying a **variable-stiffness SoftFoot**, whose rigidity changes with ground shape and load, to the bipedal robot platform.
+
+We don't see SoftFoot as just a hardware element &mdash; we want to connect it with simulation-based reinforcement-learning walking control.
+
+In other words, we will compare how the hardware structure affects walking stability and energy efficiency through metrics like **CoT, GRF, walking distance, and fall frequency**.
+
+## 4. Full team composition
+
+| Role | People | Responsibility |
+| --- | --- | --- |
+| Mechanical | 2 | Lower-body links, joint structure, SoftFoot, CAD design, 3D printing and assembly |
+| Control / RL / System | 2 | Walking control architecture, RL environment, reward function, experiment metric design |
+| Software / Embedded | 1 | ROS2 control architecture, actuator communication, sensor data processing, real-robot control |
+
+The 2 Mechanical members handle hardware design and fabrication but are not applying for this OH! GYM internship.
+
+This internship application is from the **3 members handling control, system design, and software development** within the project.
+
+## 5. Roles of the 3 OH! GYM applicants
+
+### 5.1 Wang Gyuwon, An Sangmin &mdash; Control & RL
+
+I'm responsible for the **reinforcement-learning-based walking control part**.
+
+Main responsibilities:
+
+- Designing the lower-body platform's control architecture
+- Surveying MuJoCo / Isaac Lab walking-RL environments
+- Learning the PPO-based walking-policy training process
+- Organizing observation space / action space designs
+- Researching reward-function design directions that reflect SoftFoot characteristics
+- Organizing CoT / GRF-based walking performance metrics
+- Studying the ROS2 control architecture for Sim-to-Real
+
+### 5.2 Kwon Jeongye &mdash; Software / Embedded Development
+
+The third applicant handles the **software and embedded development part**.
+
+Main responsibilities:
+
+- Learning ROS2-based control code structure
+- Preparing actuator communication implementation
+- Surveying Jetson Orin Nano / Raspberry Pi-based control systems
+- Organizing IMU / FSR sensor data acquisition methods
+- Designing the sensor data logging structure
+- Learning how to connect simulation policy outputs to real-robot control commands
+- Preparing real-hardware operation tests
+
+## 6. Current status
+
+The project is in an **early development stage, currently ongoing**.
+
+We don't have a finished real-walking result yet, but through this project we are actually learning and organizing:
+
+- Lower-body platform degrees of freedom
+- Bipedal joint structure
+- SoftFoot and Windlass Mechanism concepts
+- ROS2-based robot control architecture
+- MuJoCo / Isaac Lab simulation environments
+- PPO-based walking-policy training process
+- Reinforcement learning reward function design
+- CoT / GRF-based walking performance evaluation
+- Problems encountered during Sim-to-Real transfer
+- Sensor data acquisition and experiment log structure
+
+## 7. Connection to OH! GYM
+
+Our ongoing project isn't complete yet, but it connects directly to OH! GYM in these ways:
+
+- Understanding humanoid lower-body platform structure
+- Learning bipedal joint composition and control methods
+- Surveying simulation-based walking RL environments
+- Walking reward function design
+- Learning ROS2-based real-robot control architecture
+- Sensor data acquisition and experiment log organization
+- Understanding the Sim-to-Real process
+- Collaboration structure needed for real-robot control
+
+So rather than presenting only finished outputs, we want to highlight that we are **applicants actually building up the foundational knowledge for humanoid RL and real-robot control through a team project**.
+
+## 8. Capabilities we are gaining through the project
+
+Through this project we are learning that humanoid robot development is not something completed by a single algorithm or a single hardware fabrication.
+
+Moving an actual robot requires the following elements to be connected together:
+
+- Mechanical structure
+- Joint degrees of freedom
+- Actuator control
+- Sensor data acquisition
+- Physics engine modeling
+- RL environment setup
+- Observation / action space design
+- Reward function design
+- Experiment metric design
+- ROS2-based control architecture
+- Sim-to-Real application
+
+Since the 3 OH! GYM applicants are handling **control, system design, and software development** within the project, we believe we can quickly adapt to an internship focused on humanoid RL and data acquisition.
+
+## 9. Attached materials
+
+Detailed project content is organized in the separately attached "2026 Hanieum DreamUp Project Execution Plan."
+
+<a class="pdf-link" href="{{ '/assets/files/sobi-proposal.pdf' | relative_url }}" target="_blank" rel="noopener">
+  <span class="pdf-link__icon" aria-hidden="true">📄</span>
+  <span class="pdf-link__body">
+    <span class="pdf-link__title">2026 Hanieum DreamUp Project Execution Plan</span>
+    <span class="pdf-link__meta">PDF · Opens in a new tab</span>
+  </span>
+</a>
 
 </div>
