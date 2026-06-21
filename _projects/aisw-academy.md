@@ -1,5 +1,5 @@
 ---
-title: "AI.SW Academy 학술회 활동
+title: "AI.SW Academy 학술회 활동"
 title_en: "AI.SW Academy · Deep Learning Fundamentals Web Book"
 order: 5
 tag: "TEAM · ONGOING"
